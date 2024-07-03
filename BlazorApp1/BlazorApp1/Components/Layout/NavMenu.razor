@@ -1,30 +1,33 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">BlazorApp1</a>
-    </div>
-</div>
+﻿<MudAppBar Elevation="1">
+    <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+    <MudSpacer />
+    <MudAvatar Style="background-color: #00a884; color:#0c141b;">
+        <MudIcon Icon="@Icons.Material.Filled.Person" Title="Perfil"></MudIcon>
+    </MudAvatar>
+</MudAppBar>
 
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+<MudDrawer @bind-Open="_drawerOpen" Elevation="2">
+    <MudDrawerHeader>
+        <MudText Typo="Typo.h6">Park Aqui</MudText>
+        <small>&nbsp; Versão 1.0.1</small>
+    </MudDrawerHeader>
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
+    <MudNavMenu>
+        <MudNavLink Icon="@Icons.Material.Filled.Home" Href="/">Home</MudNavLink>
+        <MudNavLink Icon="@Icons.Material.Filled.Business" Href="/estacionamento">Estacionamento</MudNavLink>
+        <MudNavLink Icon="@Icons.Material.Filled.Dashboard" Href="/dashboard">Dashboard</MudNavLink>
+        <MudNavLink Icon="@Icons.Material.Filled.AttachMoney" Href="/listaservicos">Serviços</MudNavLink>
+        <MudNavLink Icon="@Icons.Material.Filled.AttachMoney" Href="/valores-v2">Valores</MudNavLink>
+        <MudNavLink Icon="@Icons.Material.Filled.Group" Href="/listausuarios">Usuarios</MudNavLink>
+        <MudNavLink Icon="@Icons.Material.Filled.ShowChart" Href="/faturamentos">Faturamentos</MudNavLink>
+        <MudNavLink Icon="@Icons.Material.Filled.Logout">LogOut</MudNavLink>
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
+    </MudNavMenu>
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
+</MudDrawer>
 
+@code {
+    bool _drawerOpen = true;
+
+    void DrawerToggle() => _drawerOpen = !_drawerOpen;
+}

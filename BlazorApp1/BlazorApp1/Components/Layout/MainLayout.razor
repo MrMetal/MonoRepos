@@ -1,23 +1,46 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
+<MudThemeProvider @ref="@_mudThemeProvider" @bind-IsDarkMode="@isDark" Theme="CustomTheme" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<style>
+    body {
+        background: #000000;
+    }
+</style>
+
+<MudLayout>
+    <MudLayout>
         <NavMenu />
+
+        <MudMainContent>
+            <MudContainer>
+                @Body
+            </MudContainer>
+        </MudMainContent>
+    </MudLayout>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
     </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+</MudLayout>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+@code {
+    private MudThemeProvider? _mudThemeProvider;
+    private bool isDark = true;
 
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-</div>
+    private void GoToHome() => navigationManager.NavigateTo($"/");
+
+    MudTheme CustomTheme = new MudTheme()
+        {
+            PaletteDark = new PaletteDark()
+            {
+                Primary = "#00a884",
+                Tertiary = "#00a884"
+            }
+        };
+}
