@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp1", "BlazorApp1\BlazorApp1\BlazorApp1.csproj", "{B72CA08B-0D94-43BA-83F6-FA6298B6E97C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1", "BlazorApp1\BlazorApp1\BlazorApp1.csproj", "{B72CA08B-0D94-43BA-83F6-FA6298B6E97C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp1.Client", "BlazorApp1\BlazorApp1.Client\BlazorApp1.Client.csproj", "{59C4D785-B4A2-4C1D-8C53-A0F06A428D1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1.Client", "BlazorApp1\BlazorApp1.Client\BlazorApp1.Client.csproj", "{59C4D785-B4A2-4C1D-8C53-A0F06A428D1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp2", "BlazorApp2\BlazorApp2\BlazorApp2.csproj", "{DAB183A5-85BA-456F-B058-8B8DC647FB52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp2.Client", "BlazorApp2\BlazorApp2.Client\BlazorApp2.Client.csproj", "{9B676C81-2DB9-446C-A85B-3B3BF7182A0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{59C4D785-B4A2-4C1D-8C53-A0F06A428D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59C4D785-B4A2-4C1D-8C53-A0F06A428D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59C4D785-B4A2-4C1D-8C53-A0F06A428D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB183A5-85BA-456F-B058-8B8DC647FB52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB183A5-85BA-456F-B058-8B8DC647FB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB183A5-85BA-456F-B058-8B8DC647FB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB183A5-85BA-456F-B058-8B8DC647FB52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B676C81-2DB9-446C-A85B-3B3BF7182A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B676C81-2DB9-446C-A85B-3B3BF7182A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B676C81-2DB9-446C-A85B-3B3BF7182A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B676C81-2DB9-446C-A85B-3B3BF7182A0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,7 +21,6 @@
         <MudNavLink Icon="@Icons.Material.Filled.Group" Href="/listausuarios">Usuarios</MudNavLink>
         <MudNavLink Icon="@Icons.Material.Filled.ShowChart" Href="/faturamentos">Faturamentos</MudNavLink>
         <MudNavLink Icon="@Icons.Material.Filled.Logout">LogOut</MudNavLink>
-
     </MudNavMenu>
 
 </MudDrawer>
@@ -29,5 +28,8 @@
 @code {
     bool _drawerOpen = true;
 
-    void DrawerToggle() => _drawerOpen = !_drawerOpen;
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
 }

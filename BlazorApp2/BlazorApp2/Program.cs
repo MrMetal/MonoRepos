@@ -1,12 +1,12 @@
-using BlazorApp1.Components;
-using MudBlazor.Services;
+using BlazorApp2.Client.Pages;
+using BlazorApp2.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorComponents().AddInteractiveWebAssemblyComponents();
-
-builder.Services.AddMudServices();
+builder.Services.AddRazorComponents()
+    .AddInteractiveServerComponents()
+    .AddInteractiveWebAssemblyComponents();
 
 var app = builder.Build();
 
@@ -28,7 +28,8 @@ app.UseStaticFiles();
 app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
+    .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(BlazorApp1.Client._Imports).Assembly);
+    .AddAdditionalAssemblies(typeof(BlazorApp2.Client._Imports).Assembly);
 
 app.Run();
