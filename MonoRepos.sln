@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1", "BlazorApp1\Bl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1.Client", "BlazorApp1\BlazorApp1.Client\BlazorApp1.Client.csproj", "{59C4D785-B4A2-4C1D-8C53-A0F06A428D1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp2", "BlazorApp2\BlazorApp2\BlazorApp2.csproj", "{DAB183A5-85BA-456F-B058-8B8DC647FB52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp2", "BlazorApp2\BlazorApp2\BlazorApp2.csproj", "{DAB183A5-85BA-456F-B058-8B8DC647FB52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp2.Client", "BlazorApp2\BlazorApp2.Client\BlazorApp2.Client.csproj", "{9B676C81-2DB9-446C-A85B-3B3BF7182A0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp2.Client", "BlazorApp2\BlazorApp2.Client\BlazorApp2.Client.csproj", "{9B676C81-2DB9-446C-A85B-3B3BF7182A0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{949E6B39-6F8C-42C4-82B1-3A0EF660C66D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9B676C81-2DB9-446C-A85B-3B3BF7182A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B676C81-2DB9-446C-A85B-3B3BF7182A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B676C81-2DB9-446C-A85B-3B3BF7182A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{949E6B39-6F8C-42C4-82B1-3A0EF660C66D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949E6B39-6F8C-42C4-82B1-3A0EF660C66D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949E6B39-6F8C-42C4-82B1-3A0EF660C66D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{949E6B39-6F8C-42C4-82B1-3A0EF660C66D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
