@@ -1,1 +1,1 @@
-web: cd /app/heroku_output  && ./$PROJECT_PATH && dotnet run 
+web: cd /app/heroku_output && ./$PROJECT_PATH && dotnet run 
