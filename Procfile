@@ -1,1 +1,1 @@
-cd /app/heroku_output && PROJECT_PATH
+web: cd /app/heroku_output && PROJECT_PATH
