@@ -1,1 +1,1 @@
-web: cd /app/heroku_output && ./BlazorApp3 && dotnet run
+web: cd /app/heroku_output && ./BlazorApp2 && dotnet run
