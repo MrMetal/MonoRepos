@@ -1,1 +1,1 @@
-web: $PROJECT_PATH
+web: ${PROJECT_PATH}
